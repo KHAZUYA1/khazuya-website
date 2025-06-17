@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak | KHAZUYA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(to right, #667eea, #764ba2, #ff6ec4);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .navbar a {
+      color: #fff !important;
+    }
+    .container {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    .contact-card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(6px);
+    }
+    .section-title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #fdd835;
+    }
+    .form-control {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: #fff;
+    }
+    .form-control::placeholder {
+      color: #ddd;
+    }
+    .form-control:focus {
+      box-shadow: none;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn-custom {
+      background-color: #00f2fe;
+      color: #000;
+      font-weight: bold;
+    }
+    .btn-custom:hover {
+      background-color: #00d4e3;
+    }
+    .social-icons a {
+      font-size: 1.5rem;
+      margin: 0 10px;
+      color: #fff;
+      transition: transform 0.3s;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #fdd835;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MENU UTAMA KHAZUYA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="skill.html">Skill</a></li>
+          <li class="nav-item"><a class="nav-link" href="portofolio.html">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimoni.html">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link active" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h2 class="section-title">Hubungi Saya</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="contact-card">
+          <form>
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Nama Anda" required />
+            </div>
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email Anda" required />
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Pesan Anda..." required></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-custom rounded-pill">Kirim Pesan</button>
+            </div>
+          </form>
+
+          <hr class="my-4" style="border-top: 1px solid rgba(255,255,255,0.2)"/>
+
+          <div class="text-center">
+            <p>Atau hubungi saya melalui media sosial:</p>
+            <div class="social-icons">
+              <a href="https://instagram.com/contentpreneur_muslim" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              <a href="mailto:kontak@khazuya.com"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

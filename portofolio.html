@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio | KHAZUYA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      background: linear-gradient(135deg, #43cea2, #185a9d);
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .navbar a {
+      color: #fff !important;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      padding: 2rem;
+      margin-top: 2rem;
+      backdrop-filter: blur(8px);
+    }
+    .section-title {
+      font-weight: 700;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: #fdd835;
+    }
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .portfolio-item {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 1.5rem;
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    .portfolio-item:hover {
+      transform: translateY(-8px);
+      background-color: rgba(0, 242, 254, 0.2);
+    }
+    .portfolio-icon {
+      font-size: 2.5rem;
+      color: #00f2fe;
+      margin-bottom: 1rem;
+    }
+    .portfolio-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .portfolio-desc {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MENU UTAMA KHAZUYA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="tentang.html">Tentang</a></li>
+          <li class="nav-item"><a class="nav-link" href="skill.html">Skill</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portofolio.html">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimoni.html">Testimoni</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="card mt-5">
+      <h3 class="section-title">Portofolio Karya</h3>
+      <p>Berikut ini adalah beberapa karya dan proyek yang sedang atau akan saya kembangkan sebagai seorang contentpreneur dan web engineer. Dengan semangat berbagi dan berinovasi, saya berkomitmen menghadirkan karya yang tidak hanya fungsional tapi juga penuh nilai.</p>
+      <div class="portfolio-grid">
+        <div class="portfolio-item">
+          <div class="portfolio-icon"><i class="fas fa-store"></i></div>
+          <div class="portfolio-title">Website UMKM</div>
+          <div class="portfolio-desc">Membantu pelaku usaha kecil menampilkan profil usaha dan produk secara online.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-icon"><i class="fas fa-cart-shopping"></i></div>
+          <div class="portfolio-title">Toko Online Sederhana</div>
+          <div class="portfolio-desc">Pengembangan toko online berbasis HTML + PHP sederhana untuk pemula bisnis digital.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-icon"><i class="fas fa-microchip"></i></div>
+          <div class="portfolio-title">IoT Monitoring Mesin</div>
+          <div class="portfolio-desc">Dashboard real-time monitoring mesin industri berbasis sensor dan NodeMCU.</div>
+        </div>
+        <div class="portfolio-item">
+          <div class="portfolio-icon"><i class="fas fa-heart"></i></div>
+          <div class="portfolio-title">Konten Keluarga Muslim</div>
+          <div class="portfolio-desc">Berbagi kisah inspiratif keluarga Islami melalui Instagram dan konten harian.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
